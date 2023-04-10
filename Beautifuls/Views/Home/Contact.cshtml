@@ -1,17 +1,50 @@
-﻿@{
-    ViewBag.Title = "Contact";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
-
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+﻿<!-- Page info section -->
+<section class="page-info-section set-bg" data-setbg="img/page-info-bg/3.jpg">
+    <h2>Contact</h2>
+</section>
+<!-- Page info section end -->
+<!-- Contact section -->
+<section class="contact-section">
+    <div class="container">
+        <div class="text-center contact-title">
+            <h2>Get in touch</h2>
+        </div>
+        <form class="contact-form">
+            <div class="row">
+                <div class="col-lg-6">
+                    <input type="text" placeholder="Your Name">
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" placeholder="Your E-mail">
+                </div>
+                <div class="col-lg-12">
+                    <input type="text" placeholder="Subject">
+                    <textarea placeholder="Message"></textarea>
+                    <div class="text-center">
+                        <button class="site-btn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- Contact section -->
+<!-- Contact info & map section -->
+<div class="contact-info-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="contact-info-box">
+                    <img src="img/logo.png" alt="">
+                    <ul>
+                        <li><span>Address:</span>Main Str, no 23, New York</li>
+                        <li><span>Phone:</span>+546 990221 123</li>
+                        <li><span>Mail:</span>model@contact.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14376.077865872314!2d-73.879277264103!3d40.757667781624285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1546528920522" style="border:0" allowfullscreen></iframe>
+</div>
+<!-- Contact info & map section end -->

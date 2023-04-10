@@ -25,6 +25,25 @@ namespace Beautifuls
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+            // add glamour css bundles
+            bundles.Add(new StyleBundle("~/Content/glamour_css").Include(
+                "~/Content/glamour_css/bootstrap.min.css",
+                "~/Content/glamour_css/font-awesome.min.css",
+                "~/Content/glamour_css/owl.carousel.min.css",
+                "~/Content/glamour_css/flaticon.css",
+                "~/Content/glamour_css/magnific-popup.css",
+                "~/Content/glamour_css/style.css"
+            ));
+            // add glamour js bundles
+            bundles.Add(new ScriptBundle("~/Bundles/glamour_js").Include(
+                "~/Scripts/glamour_js/jquery-3.2.1.min.js",
+                "~/Scripts/glamour_js/bootstrap.min.js",
+                "~/Scripts/glamour_js/jquery.magnific-popup.min.js",
+                "~/Scripts/glamour_js/owl.carousel.min.js",
+                "~/Scripts/glamour_js/isotope.pkgd.min.js",
+                "~/Scripts/glamour_js/circle-progress.min.js",
+                "~/Scripts/glamour_js/main.js"
+            ));
         }
     }
 }
