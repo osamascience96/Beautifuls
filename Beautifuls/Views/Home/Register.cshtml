@@ -1,41 +1,40 @@
-﻿
-@{
-    ViewBag.Title = "Login";
+﻿@{
+    ViewBag.Title = "Register";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <section class="contact-section">
     <div class="container">
         <div class="text-center contact-title">
-            <h2>Sign In to Beautifuls</h2>
+            <h2>Sign Up to Beautifuls</h2>
         </div>
         <form class="contact-form">
             <div class="row">
-                @* Enter your Email *@
-                <div class="col-md-3"></div>
+                <div class="col-lg-6">
+                    <input class="mb-0" type="text" placeholder="First Name">
+                    <span class="validation text-danger d-none">First Name is Required</span>
+                </div>
+                <div class="col-lg-6">
+                    <input class="mb-0" type="text" placeholder="Last Name">
+                </div>
+                <div class="col-lg-12 my-2"></div>
                 <div class="col-lg-6">
                     <input class="mb-0" type="email" placeholder="E-mail">
                     <span class="validation text-danger d-none">E-mail is Required</span>
                 </div>
-                <div class="col-md-3"></div>
-                <span class="col-12 my-2"></span>
-                @* Enter Your Password *@
-                <div class="col-md-3"></div>
                 <div class="col-lg-6">
                     <input class="mb-0" type="password" placeholder="Password">
                     <span class="validation text-danger d-none">Password is Required</span>
                 </div>
-                <div class="col-md-3"></div>
-                @* Send *@
-                <span class="col-12 my-2"></span>
+                <div class="col-lg-12 my-2"></div>
                 <div class="col-lg-12">
                     <div class="text-center">
-                        <button class="site-btn">Sign In</button>
+                        <button class="site-btn">Sign Up</button>
                         @* Link to register *@
-                        @Html.ActionLink("Not a Member? SignUp.", "Register", "Home")
+                        @Html.ActionLink("Already a member? SignIn.", "Login", "Home")
                     </div>
                 </div>
             </div>
-        </form> 
+        </form>
     </div>
 </section>
